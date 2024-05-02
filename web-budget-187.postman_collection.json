@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "6feefd71-a4fc-48f2-8d3b-96cb4c6c6bb2",
+		"name": "web-budget-187",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34541323"
+	},
+	"item": [
+		{
+			"name": "insert-transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Electric 6\",\r\n    \"type\": \"Bill\",\r\n    \"total_expense\": 500000,\r\n    \"total_income\": 0,\r\n    \"account_id\": 1\r\n}\r\n"
+				},
+				"url": "http://localhost/(direktori)/api/transactions/insert.php"
+			},
+			"response": []
+		},
+		{
+			"name": "edit-transactions",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Electric 3\",\r\n    \"type\": \"Bill 3\",\r\n    \"total_expense\": 600000,\r\n    \"total_income\": 0,\r\n    \"account_id\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/(direktori)/api/transactions/edit.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"(direktori)",
+						"api",
+						"transactions",
+						"edit.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"New John\",\r\n    \"last_name\": \"Doe\",\r\n    \"birth_date\": \"1990-01-01\",\r\n    \"username\": \"johndoe\",\r\n    \"email_address\": \"johndoe@example.com\",\r\n    \"password\": \"newpassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/(direktori)/api/users/edit.php?account_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"(direktori)",
+						"api",
+						"users",
+						"edit.php"
+					],
+					"query": [
+						{
+							"key": "account_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-transactions",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/(direktori)/api/transactions/delete.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"(direktori)",
+						"api",
+						"transactions",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/(direktori)/api/users/delete.php?account_id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"(direktori)",
+						"api",
+						"users",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "account_id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert-users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"John\",\r\n    \"last_name\": \"Doe\",\r\n    \"birth_date\": \"1990-01-01\",\r\n    \"username\": \"johndoe\",\r\n    \"email_address\": \"johndoe@example.com\",\r\n    \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost/(direktori)/api/users/insert.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"johndoe\",\r\n    \"password\": \"newpassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost/(direktori)/api/login.php"
+			},
+			"response": []
+		}
+	]
+}

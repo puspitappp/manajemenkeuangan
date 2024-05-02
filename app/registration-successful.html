@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Successful | Budgetin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style-global.css">
+        <link rel="stylesheet" type="text/css" href="css/style-logreg.css">
+        <script type="text/javascript" src="js/panel-collapsed.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="collapsed-panel">
+                <button class="btn-close" onclick="hideCollapsed()">
+                    <img src="img/icons/btn-close.png" id="img-btn-close">
+                </button>
+                <a href="#header" class="nav-menu-active" onclick="hideCollapsed()">Home</a>
+                <a href="#promo-2" onclick="hideCollapsed()">FAQ</a>
+                <a href="#promo-1 " onclick="hideCollapsed()">About Us</a>
+                <a href="#copyright" onclick="hideCollapsed()">Contact</a>
+            </div>
+<!-- ----------------------------------------------HEADER-------------------------------------------------- -->            
+            <header>
+                <a href="landing.html" class="logo-header">KELOMPOK 7 MIC</a>
+                <button href="#" class="btn-collapse" onclick="showCollapsed()">
+                    <img src="img/icons/btn-collapse.png">
+                </button>
+                <div class="nav-and-reg">
+                    <button class="btn-signin" onclick="location.href='login.php'">Sign In</button>
+                </div>
+            </header>
+<!-- ----------------------------------------------CONTENT------------------------------------------------- -->
+            <div class="log-reg regdone">
+                <img src="img/icons/checkmark.png" id="img-checkmark">
+                <h1 id="title-regdone">Registration Successful!</h1>
+                <h3 id="subtitle-regdone">You can now sign in to your new account.</h3>
+            </div>
+        </div>
+    </body>
+</html>

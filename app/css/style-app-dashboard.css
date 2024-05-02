@@ -1,0 +1,15 @@
+#tb-transaction
+{
+    width: 100%;
+    margin: 0 40px;
+}
+#tb-transaction tr .type
+{ 
+    width: 50%;
+    border-bottom: 1px solid #d3d3d3;
+}
+#tb-transaction tr .income, .expense
+{
+    max-width: 20%;
+    border-bottom: 1px solid #d3d3d3;
+}
